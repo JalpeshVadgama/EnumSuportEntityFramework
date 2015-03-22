@@ -2,9 +2,9 @@
 
 namespace EnumSupportEF
 {
-    public class EmployeeConext : DbContext 
+    public class EmployeeContext : DbContext 
     {
-        public EmployeeConext() :base("EmployeeConnectionString")
+        public EmployeeContext() :base("EmployeeConnectionString")
         {
             
         }
