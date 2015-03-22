@@ -1,6 +1,6 @@
 ﻿namespace EnumSupportEF
 {
-    public enum Deaprtment
+    public enum Department
     {
         Sales=1,
         Marketing =2,
