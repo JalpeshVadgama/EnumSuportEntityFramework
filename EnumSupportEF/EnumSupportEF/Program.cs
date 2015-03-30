@@ -11,7 +11,7 @@ namespace EnumSupportEF
                 EmployeeId = 1,
                 FirstName ="Jalpesh",
                 LastName  ="Vadgama",
-                Deaprtment = Deaprtment.Admin
+                Department = Department.Admin
             };
 
             Employee anotherEmployee = new Employee
@@ -19,15 +19,15 @@ namespace EnumSupportEF
                 EmployeeId = 2,
                 FirstName = "Vishal",
                 LastName = "Vadgama",
-                Deaprtment = Deaprtment.Marketing
+                Department = Department.Marketing
             };
 
             //Code for adding Employees
-            using (EmployeeConext employeeConext = new EmployeeConext())
+            using (EmployeeContext employeeContext = new EmployeeContext())
             {
-                employeeConext.Employees.Add(employee);
-                employeeConext.Employees.Add(anotherEmployee);
-                employeeConext.SaveChanges();
+                employeeContext.Employees.Add(employee);
+                employeeContext.Employees.Add(anotherEmployee);
+                employeeContext.SaveChanges();
                 Console.WriteLine("Employee Added Sucessfully");
             }
         }

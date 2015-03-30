@@ -5,6 +5,6 @@
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public Deaprtment Deaprtment { get; set; }
+        public Department Department { get; set; }
     }
 }
